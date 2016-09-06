@@ -1,9 +1,9 @@
 var express = require('express');
 var app = express();
 var auth = {
-    user: 'test1',
-    pass: 'pwd',
-    ticket: 'ABCDs2330gdws'
+    user: 'live',
+    pass: '654321',
+    ticket: 'baka'
 };
 
 app.get('/auth/push', function (req, res) {
@@ -30,7 +30,6 @@ app.get('/auth/play', function(req, res){
      console.log('bad play user');
      res.status(401).end();
   }
-
 });
 
 var server = app.listen(9999, function () {
